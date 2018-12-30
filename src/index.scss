@@ -1,0 +1,42 @@
+/* IMPORTACIONES, VARIABLES Y RESETS */
+@import url('https://fonts.googleapis.com/css?family=Days+One|Open+Sans');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+:root{
+  --font-family: 'Open Sans', sans-serif;
+  --font-title: 'Days One', sans-serif;
+  --color1: #54bad8; /* 0,147,198 */
+  --color2: #FFF;
+  --color3: #0093c6;
+  --color4: #192c47;
+  --color5: #f7dc1b;
+  --color1-transparent: rgba(255,255,255,.9);
+  
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  background: var(--color2);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  color: var(--color1);
+}
+
+section{
+  &:nth-child(odd){
+    background: var(--color1);
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6{
+      color: var(--color2);
+    }
+  }
+}
