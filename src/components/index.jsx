@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import './index.scss';
 
 import Header from './header'
+// import 
 
 class App extends Component {
+  constructor(...props){
+    super(...props)
+    this.state = {
+
+    }
+  }
   render() {
     return (
       <main>
@@ -127,5 +134,8 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {  }
+App.defaultProps = {  }
 
 export default App;
