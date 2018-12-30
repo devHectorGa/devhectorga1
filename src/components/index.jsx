@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './index.scss';
+import PropTypes from 'prop-types';
 
 import Header from './header'
+import Home from './home'
 // import 
 
 class App extends Component {
@@ -15,11 +17,7 @@ class App extends Component {
     return (
       <main>
         <Header />
-        <section id="home" className="home">
-          <h1>Lorem Ipsum</h1>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-          <button>Contact Me</button>
-        </section>
+        <Home />        
         <section id="about" className="about">
           <h2>About Me</h2>
           <div className="slidePictures"></div>
