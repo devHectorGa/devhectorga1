@@ -1,0 +1,40 @@
+.about {
+  padding: 5rem 1rem;
+  display: grid;
+  grid-template-areas: 'title''data''picture';
+  grid-gap: 1rem;
+  justify-content: center;  
+  &_title {
+    grid-area: title;
+  }
+  &_picture {
+    grid-area: picture;
+    max-width: 20rem;
+  }
+  &_data {
+    grid-area: data;
+    width: 90vw;
+    background-color: var(--color4);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > .data {
+      width: 70%;
+      padding: .5rem;
+      border-bottom: 1px solid var(--color2);
+      &:last-child {
+        border: none;
+      }
+      
+      & > p {
+        color: var(--color2);
+        margin: .5rem 0;
+        > a {
+          text-decoration: none;
+          color: var(--color2);
+        }
+      }
+    }
+  }
+}
