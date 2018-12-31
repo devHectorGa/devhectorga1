@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Header from './header'
 import Home from './home'
 import About from './about'
+import Skills from './skills'
 // import 
 
 class App extends Component {
@@ -20,25 +21,7 @@ class App extends Component {
         <Header />
         <Home />        
         <About />
-        <section id="skills" className="skills">
-          <h2>My Skills</h2>
-          <div className="skill">
-            <h3>HTML5, CSS3, JS</h3>
-            <progress value="85" max="100">Hola</progress>
-          </div>
-          <div className="skill">
-            <h3>PHP</h3>
-            <progress value="40" max="100">Hola</progress>
-          </div>
-          <div className="skill">
-            <h3>React JS</h3>
-            <progress value="15" max="100">Hola</progress>
-          </div>
-          <div className="skill">
-            <h3>Firebase</h3>
-            <progress value="50" max="100">Hola</progress>
-          </div>
-        </section>
+        <Skills />
         <section id="services" className="services">
           <h2>My Services</h2>
           <a href="#web" className="service">Web Design</a>
