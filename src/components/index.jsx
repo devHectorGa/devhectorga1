@@ -6,6 +6,7 @@ import Header from './header'
 import Home from './home'
 import About from './about'
 import Skills from './skills'
+import Services from './services'
 // import 
 
 class App extends Component {
@@ -22,12 +23,7 @@ class App extends Component {
         <Home />        
         <About />
         <Skills />
-        <section id="services" className="services">
-          <h2>My Services</h2>
-          <a href="#web" className="service">Web Design</a>
-          <a href="#creative" className="service">Creative Design</a>
-          <a href="#coding" className="service">Coding</a>
-        </section>  
+        <Services />  
         <section id="projects" className="projects">
           <h2>My Projects</h2>
           <div className="project">
