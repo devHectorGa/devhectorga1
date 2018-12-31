@@ -1,0 +1,19 @@
+.skills {
+  padding: 5rem 1rem;
+  background: var(--color3);
+  & > h2 {
+    color: var(--color2);      
+  }
+}
+.skill {
+  background: var(--color2);
+  border-radius: 15px;
+  margin: .5rem 0;
+  padding: .5rem;
+  & > {
+    h3 {
+      margin: 0;
+      color: var(--color1);
+    }
+  }
+}
