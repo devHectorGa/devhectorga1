@@ -9,7 +9,7 @@
   --color3: #0093c6;
   --color4: #192c47;
   --color5: #f7dc1b;
-  --color1-transparent: rgba(255,255,255,.9);
+  --color1-transparent: rgba(255,255,255,.8);
   
 }
 
@@ -25,18 +25,4 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
   color: var(--color1);
-}
-
-section{
-  &:nth-child(odd){
-    background: var(--color1);
-    & > h1,
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6{
-      color: var(--color2);
-    }
-  }
 }
