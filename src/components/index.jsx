@@ -7,6 +7,7 @@ import Home from './home'
 import About from './about'
 import Skills from './skills'
 import Services from './services'
+import Projects from './projects'
 // import 
 
 class App extends Component {
@@ -24,49 +25,7 @@ class App extends Component {
         <About />
         <Skills />
         <Services />  
-        <section id="projects" className="projects">
-          <h2>My Projects</h2>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div className="project">
-            <img src="" alt="" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </section>
+        <Projects />
         <section id="contact" className="contact">
           <h2>Contact Me</h2>
           <div className="contact_form">
