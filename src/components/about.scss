@@ -1,15 +1,15 @@
 .about {
   padding: 5rem 1rem;
   display: grid;
-  grid-template-areas: 'title''data''picture';
+  grid-template-areas: 'title''data';
   grid-gap: 1rem;
   justify-content: center;  
   &_title {
     grid-area: title;
   }
   &_picture {
-    grid-area: picture;
-    max-width: 20rem;
+    width: 0;
+    height: 0;
   }
   &_data {
     grid-area: data;
