@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Services = (...props) => (
   <section id="services" className="services">
@@ -7,6 +7,6 @@ const Services = (...props) => (
     <a href="#creative" className="service">Creative Design</a>
     <a href="#coding" className="service">Coding</a>
   </section>
-)
+);
 
-export default Services
+export default Services;

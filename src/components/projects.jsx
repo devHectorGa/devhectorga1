@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Projects = (...props) => (
   <section id="projects" className="projects">
@@ -44,6 +44,6 @@ const Projects = (...props) => (
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   </section>
-)
+);
 
-export default Projects
+export default Projects;

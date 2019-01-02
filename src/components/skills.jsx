@@ -1,5 +1,5 @@
-import React from 'react'
-import './skills.scss'
+import React from 'react';
+import './skills.scss';
 
 const Skills = (...props) => (
   <section id="skills" className="skills">
@@ -21,6 +21,6 @@ const Skills = (...props) => (
       <progress value="50" max="100">Hola</progress>
     </div>
   </section>
-)
+);
 
-export default Skills
+export default Skills;

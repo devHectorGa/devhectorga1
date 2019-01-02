@@ -1,5 +1,5 @@
-import React from 'react'
-import './home.scss'
+import React from 'react';
+import './home.scss';
 
 const Header = (...props) => (
   <div id="home" className="home">
@@ -7,6 +7,6 @@ const Header = (...props) => (
     <h2>Welcome to my Portfolio.</h2>
     <a href="#contact">Contact Me</a>
   </div>
-)
+);
 
-export default Header
+export default Header;

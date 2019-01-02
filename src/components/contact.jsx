@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = (...props)=>(
   <section id="contact" className="contact">
@@ -14,6 +14,6 @@ const Contact = (...props)=>(
       </form>
     </div>
   </section>
-)
+);
 
-export default Contact
+export default Contact;
