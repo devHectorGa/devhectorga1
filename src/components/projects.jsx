@@ -1,4 +1,5 @@
 import React from 'react';
+import './projects.scss';
 
 const Projects = (...props) => (
   <section id="projects" className="projects">
