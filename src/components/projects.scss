@@ -1,0 +1,30 @@
+.projects {
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 1rem 0;
+
+  & h2 {
+    color: var(--color2);
+  }
+}
+.project {
+  display: grid;
+  grid-template-areas: 'title''img''text';
+  justify-items: center;
+  background-color: var(--color3);
+  margin: 1rem;
+  border-radius: 10px;
+
+  &Img {
+    width: 70vw;
+    grid-area: img;
+  }
+  &Title {
+    color: var(--color2);
+    grid-area: title;
+  }
+  &Text {
+    grid-area: text;
+  }
+
+}
