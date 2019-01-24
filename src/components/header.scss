@@ -1,3 +1,4 @@
+@import 'mixins';
 /* HEADER SECTION */
 .header {
   position: fixed;
@@ -10,12 +11,18 @@
   background: var(--color1-transparent);
   padding: 1rem 0;
   top: 0;
-
+  @include from(large){
+    grid-template-areas: 'logo nav nav';
+  }
   &_nav{
     height: 0;
     opacity: 0;
     grid-area: nav;
     transform: translateX(-100vw);
+    @include from(large){
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
   /* height: 50vh;
   display: flex; */
@@ -24,6 +31,9 @@
     background: none;
     grid-area: button;
     color: var(--color1);
+    @include from(large){
+      display: none;
+    }
   }
   & .logo {
     min-width: 50px;
@@ -46,8 +56,11 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
-
+  @include from(large){
+    flex-direction: row;
+  }
   &_list {
+    cursor: pointer;
     list-style: none;
     padding: 1rem;
     width: 100%;
@@ -64,5 +77,12 @@
     height: inherit;
     text-decoration: none;    
     font-size: 1.5rem;
+    &:visited {
+      color: var(--color1);
+    }
+    &:active {
+      color: var(--color5);
+    }
   }
+
 }

@@ -1,9 +1,10 @@
+@import 'mixins';
 .about {
   padding: 5rem 1rem;
   display: grid;
   grid-template-areas: 'title''data';
   grid-gap: 1rem;
-  justify-content: center;  
+  justify-content: center;
   &_title {
     grid-area: title;
   }
@@ -19,6 +20,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include from(medium){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+    @include from(large){
+      width: 50vw;
+    }
     & > .data {
       width: 70%;
       padding: .5rem;

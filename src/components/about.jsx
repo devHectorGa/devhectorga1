@@ -19,10 +19,6 @@ const About = (...props) => (
           <p>Bogotá DC, Colombia</p>
         </div>
         <div className="data">
-          <h3>Phone Number</h3>
-          <p>+57 310 123 4567</p>
-        </div>
-        <div className="data">
           <h3>Email</h3>
           <p><a href="mailto:contact@devHector.Ga">contacto@devHector.Ga</a></p>
         </div>
