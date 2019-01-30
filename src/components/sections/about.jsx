@@ -1,6 +1,6 @@
 import React from 'react';
-import './about.scss';
-import Logo from './img/imagotipo.svg';
+import './css/about.scss';
+import Logo from '../img/imagotipo.svg';
 
 const About = (...props) => (
     <section id="about" className="about">

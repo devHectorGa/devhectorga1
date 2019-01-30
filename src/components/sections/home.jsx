@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.scss';
+import './css/home.scss';
 
 const Header = (...props) => (
   <div id="home" className="home">

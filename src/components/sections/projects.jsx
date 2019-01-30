@@ -1,7 +1,7 @@
 import React from 'react';
-import './projects.scss';
-import image1 from './img/project01.jpg';
-import image2 from './img/project02.jpg';
+import './css/projects.scss';
+import image1 from '../img/project01.jpg';
+import image2 from '../img/project02.jpg';
 
 const Projects = (...props) => (
   <section id="projects" className="projects">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './services.scss';
+import './css/services.scss';
 
 const Services = (...props) => (
   <section id="services" className="services">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact.scss';
+import './css/contact.scss';
 
 const Contact = (...props)=>(
   <section id="contact" className="contact">

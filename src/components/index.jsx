@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './index.scss';
-import PropTypes from 'prop-types';
 
-import Header from './header';
-import Home from './home';
-import About from './about';
-import Skills from './skills';
-import Services from './services';
-import Projects from './projects';
-import Contact from './contact';
-// import 
+import Header from './sections/header';
+import Home from './sections/home';
+import About from './sections/about';
+import Skills from './sections/skills';
+import Services from './sections/services';
+import Projects from './sections/projects';
+import Contact from './sections/contact';
+import Footer from './sections/footer';
 
 class App extends Component {
   constructor(...props){
@@ -26,9 +25,7 @@ class App extends Component {
         <Services />  
         <Projects />
         <Contact />
-        <footer>
-          <p>&copy; 2018. All rights reserved </p>
-        </footer>
+        <Footer />
       </main>
     );
   }
