@@ -1,21 +1,29 @@
 import React from 'react';
+import Nav from './component/nav';
 import './css/header.scss';
+import './css/home.scss';
 
-const Header = (...props) =>(
-  <header className="header">
+const links = [
+  {href: "#home", name: "Home"},
+  {href: "#about",name: "About"},
+  {href: "#skills",name: "Skills"},
+  {href: "#services",name: "Services"},
+  {href: "#projects",name: "Projects"},
+  {href: "#contact",name: "Contact"}
+];
+
+const Header = (props) =>(
+  <header className={setClass(props.nav)}>
     <a href="./" className="logo"><img src="imagotipo.svg" alt="imagotipo devHectorGa"/></a>
-    <button className="nav_toggle"><i className="fas fa-bars fa-2x"></i></button>
-    <nav className="header_nav">
-      <ul className="nav">
-        <li className="nav_list"><a href="#home" className="nav_link">Home</a></li>
-        <li className="nav_list"><a href="#about" className="nav_link">About</a></li>
-        <li className="nav_list"><a href="#skills" className="nav_link">Skills</a></li>
-        <li className="nav_list"><a href="#services" className="nav_link">Services</a></li>
-        <li className="nav_list"><a href="#projects" className="nav_link">Projects</a></li>
-        <li className="nav_list"><a href="#contact" className="nav_link">Contact</a></li>
-      </ul>
-    </nav>
+    <button className="navToggle" onClick={props.handleOnNav}><i className="fas fa-bars fa-2x"></i></button>
+    <Nav links={links} handleOnNav={props.handleOnNav}/>    
   </header>
+);
+
+const setClass = (state)=>(
+  (state)
+    ? "header is-active"
+    : "header"
 );
 
 export default Header;

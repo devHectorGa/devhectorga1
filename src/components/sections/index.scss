@@ -1,13 +1,11 @@
-@import './sections/css/mixins.scss';
+@import './css/mixins.scss';
 body {
   text-align: center;
 }
 section {
   h2 {
     font-size: 3rem;
-    @include from(large) {
-      color: var(--color1);
-    }
+    color: var(--color1);
   }
 }
 footer {

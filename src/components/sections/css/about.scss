@@ -1,32 +1,49 @@
 @import 'mixins';
-.about {
-  padding: 5rem 1rem;
+.about {  
+  padding: 7rem 1rem;
   display: grid;
-  grid-template-areas: 'title''data';
-  grid-gap: 1rem;
-  justify-content: center;
-  &_title {
+  grid-template-areas: 'title''text''data';
+  align-items: center;
+  justify-items: center;
+  @include from(large){
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'title title''picture text''picture data';
+  }
+  &Title {
     grid-area: title;
   }
-  &_picture {
+  &Picture {
+    grid-area: picture;
     width: 0;
     height: 0;
+    margin: auto;
+    @include from(large){
+      width: 30vw;
+      height: auto;
+    }
   }
-  &_data {
+  &Text{
+    grid-area: text;
+    padding: 1rem;
+    color: #454545;
+    @include from(large){
+      width: 40vw;
+    }
+  }
+  &Data {
     grid-area: data;
-    width: 90vw;
+    width: 80vw;
     background-color: var(--color4);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include from(medium){
+    @include from(large){
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
-    }
-    @include from(large){
-      width: 50vw;
+      width: 45vw;
     }
     & > .data {
       width: 70%;

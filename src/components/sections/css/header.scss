@@ -8,13 +8,13 @@
   justify-items: center;
   align-content: center;
   width: 100%;  
-  background: var(--color1-transparent);
+  background: var(--color2);
   padding: 1rem 0;
   top: 0;
   @include from(large){
     grid-template-areas: 'logo nav nav';
   }
-  &_nav{
+  &Nav{
     height: 0;
     opacity: 0;
     grid-area: nav;
@@ -26,7 +26,7 @@
   }
   /* height: 50vh;
   display: flex; */
-  & .nav_toggle {
+  & .navToggle {
     border: none;
     background: none;
     grid-area: button;
@@ -37,16 +37,18 @@
   }
   & .logo {
     min-width: 50px;
+    max-width: 100px;
     grid-area: logo;
   }
   /* HEADER SECTION IS-ACTIVE */
-  &.is-active > .header_nav{
-    height: 90vh;
-    opacity: 1;
-    transform: translate(0);
+  &.is-active > .headerNav{
+    @media screen and (max-width: 1024px) {
+      height: 90vh;
+      opacity: 1;
+      transform: translate(0);
+    }
   }
 }
-
 .nav {  
   padding: 0;
   width: 100%;
@@ -59,7 +61,7 @@
   @include from(large){
     flex-direction: row;
   }
-  &_list {
+  &List {
     cursor: pointer;
     list-style: none;
     padding: 1rem;
@@ -67,12 +69,12 @@
 
     &:hover{
       background: var(--color1);
-      & > .nav_link {
+      & > .navLink {
         color: var(--color2)
       }
     }
   }
-  &_link {
+  &Link {
     width: inherit;
     height: inherit;
     text-decoration: none;    

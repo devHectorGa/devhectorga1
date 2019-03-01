@@ -1,6 +1,6 @@
 @import 'mixins';
 .skills {
-  padding: 5rem 1rem;
+  padding: 7rem 1rem;
   background: var(--color3);
   & > h2 {
     color: var(--color2);      
@@ -15,7 +15,7 @@
   }
   @include from(large){
     grid-template-columns: repeat(4, 175px);
-    grid-gap: 2rem;
+    grid-gap: 0 2rem;
     justify-content: center;
     & > h2 {
       grid-column: span 4;
@@ -32,6 +32,18 @@
       margin: 0;
       color: var(--color1);
       font-size: 3rem;
+    }
+    p {
+      color: var(--color1);
+      margin: 0;
+      & > span {
+        &::before{
+          content: " - ";
+        }
+        &::after{
+          content: "%";
+        }
+      }
     }
   }
 }

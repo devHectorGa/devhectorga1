@@ -10,42 +10,22 @@ const Projects = (...props) => (
       <img src={image1} alt="" className="projectImg" />
       <h3 className="projectTitle">Lorem Ipsum</h3>
       <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
+      <span className="projectLinks">        
+        <a href="https://github.com/devHectorGa/devhectorga" target="_blank" className="projectLinks-link" rel="noopener noreferrer">
+          View more <i class="fab fa-github"></i>
+        </a>
+      </span>
+    </div>        
     <div className="project">
       <img src={image2} alt="" className="projectImg" />
       <h3 className="projectTitle">Lorem Ipsum</h3>
       <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className="project">
-      <img src={image1} alt="" className="projectImg" />
-      <h3 className="projectTitle">Lorem Ipsum</h3>
-      <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className="project">
-      <img src={image2} alt="" className="projectImg" />
-      <h3 className="projectTitle">Lorem Ipsum</h3>
-      <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className="project">
-      <img src={image1} alt="" className="projectImg" />
-      <h3 className="projectTitle">Lorem Ipsum</h3>
-      <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className="project">
-      <img src={image2} alt="" className="projectImg" />
-      <h3 className="projectTitle">Lorem Ipsum</h3>
-      <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className="project">
-      <img src={image1} alt="" className="projectImg" />
-      <h3 className="projectTitle">Lorem Ipsum</h3>
-      <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className="project">
-      <img src={image2} alt="" className="projectImg" />
-      <h3 className="projectTitle">Lorem Ipsum</h3>
-      <p className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
+      <span className="projectLinks">        
+        <a href="https://github.com/devHectorGa/devhectorga" target="_blank" className="projectLinks-link" rel="noopener noreferrer">
+          View more <i class="fab fa-github"></i>
+        </a>
+      </span>
+    </div>        
   </section>
 );
 
