@@ -5,6 +5,11 @@
   & > h2 {
     color: var(--color2);      
   }
+  progress {
+    border: 1px solid var(--color1);
+    background-color: var(--color2);
+    width: 80%;
+  }
   @include from(medium){
     display: grid;
     grid-template-columns: repeat(2, 1fr);
