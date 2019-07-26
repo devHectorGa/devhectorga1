@@ -13,21 +13,19 @@ import Footer from './footer';
 class Sections extends Component {
   constructor(...props){
     super(...props);
-    this.state = { 
+    this.state = {
       nav: false
-     };
+    };
     this.handleOnNav = this.handleOnNav.bind(this);
   }
   handleOnNav(e){
-    this.state.nav
-      ? this.setState({nav: false})
-      : this.setState({nav: true});
+    this.setState({nav: !this.state.nav});
   }
   render() {
     return (
       <main>
         <Header nav={this.state.nav} handleOnNav={this.handleOnNav} />
-        <Home />        
+        <Home />
         <About />
         <Skills />
         <Services />
