@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/about.scss';
-import photo from '../img/photo.png';
+import photo from '../img/photo.webp';
 
 const About = (...props) => (
     <section id="about" className="about">

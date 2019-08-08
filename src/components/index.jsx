@@ -10,8 +10,8 @@ class App extends Component {
   }
   render() {
     return (
-      // <Sections />
-      <h1>Hola</h1>
+      <Sections />
+      // <h1>Hola</h1>
     );
   }
 }
