@@ -10,7 +10,7 @@ const Projects = (...props) => (
       <p className="projectText">A simple website for a local enterprise of events, designed with CSS, React and Firebase.</p>
       <span className="projectLinks">        
         <a href="https://eventosylogistica.net/" target="_blank" className="projectLinks-link" rel="noopener noreferrer">
-          <i class="fas fa-globe-americas "></i> Visit site
+          <i className="fas fa-globe-americas "></i> Visit site
         </a>
       </span>
     </div>        
@@ -20,7 +20,7 @@ const Projects = (...props) => (
       <p className="projectText">A complete website with user role, a protected section and real-time. Quotations and invoices (In development) and more features for clients.</p>
       <span className="projectLinks">        
         <a href="https://www.nacionaldemontacargas.com.co/" target="_blank" className="projectLinks-link" rel="noopener noreferrer">
-          <i class="fas fa-globe-americas "></i> Visit site
+          <i className="fas fa-globe-americas "></i> Visit site
         </a>
       </span>
     </div>        
