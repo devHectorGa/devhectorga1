@@ -25,7 +25,7 @@ const About = (...props) => (
           <p><a href="mailto:contact@devHector.Ga">contacto@devHector.Ga</a></p>
         </div>
       </div>
-      <img className="aboutPicture" src={photo} alt="Imagotipo devHector.Ga"/>
+      <img className="aboutPicture" src={photo} alt="Fotografia Hector Garzón"/>
     </section>
 );
 
